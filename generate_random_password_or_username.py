@@ -86,7 +86,7 @@ def main_func_passwords():
         print(random_password)
 
 
-all_words = ["dynamite", "tron", "wannabe", "yasuo", "apple", "strict", "daddy", "egirl", "broken", "fame", "arrogant",
+WORDS = ["dynamite", "tron", "wannabe", "yasuo", "apple", "strict", "daddy", "egirl", "broken", "fame", "arrogant",
              "lighter", "resist", "window", "moon", "glider", "femboy"]
 
 
@@ -157,7 +157,7 @@ def get_username(amount_words, amount_integers, user_starting_word):
     random_username = f"{user_starting_word}"
 
     for i in range(amount_words):
-        random_username += random.choice(all_words)
+        random_username += random.choice(WORDS)
 
     for i in range(amount_integers):
         random_username += random.choice(NUMBERS)
